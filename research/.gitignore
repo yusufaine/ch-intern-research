@@ -1,0 +1,5 @@
+juno-vals/csv/*
+juno-vals/json/*
+juno-vals/*.csv
+juno-vals/*.json
+juno-vals/*.txt
