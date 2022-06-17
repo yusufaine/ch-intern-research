@@ -1,10 +1,12 @@
+# Remove sensitive data
 personal-testing/*
-.env*
-.secret*
-
 research/juno-vals/csv/*
 research/juno-vals/json/*
 research/juno-vals/*.csv
 research/juno-vals/*.json
 research/juno-vals/*.txt
+
+# Secrets and env variables
+.env*
+.secret*
 
