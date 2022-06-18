@@ -66,3 +66,6 @@ node_modules/
 .env
 .env*
 .secret*
+
+# Lib
+lib/*
