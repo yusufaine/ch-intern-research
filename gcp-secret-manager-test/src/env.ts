@@ -1,6 +1,7 @@
 import { SecretManagerServiceClient } from "@google-cloud/secret-manager";
 import * as dotenv from "dotenv";
 
+// Inplace of SECRET_NAME
 enum envTypes {
   dev_uri,
   local_uri,
