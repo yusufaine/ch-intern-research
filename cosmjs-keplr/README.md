@@ -13,5 +13,7 @@ Files:
 2. `component/decoder.ts` -- includes the 2 decoding functions described above with some tests.
 
 Assumptions:
-1. Chain prefix is known (cosmos, juno, osmo, etc)
+
+1. Chain prefix is known (`cosmos`, `osmo`, etc)
 2. `PubKey` is only encrypted with `PubKeySecp256k1`
+3. `StdSignature.pub_key.value` is always base64.
