@@ -63,9 +63,12 @@ describe("test signatureToPubKey", () => {
 
       const originalAddr = "osmo16jvt8389huy8ga20r3jj8qlg6tr46huwjqegj6";
       const sigToPubKey = signatureToPubkey(arbStdSignature);
-      const PubKeyToAddr = pubkeyToAddress(sigToPubKey, "osmo");
 
-      expect(originalAddr === PubKeyToAddr).toBe(true);
+      // ? Not sure if pub_key value always matches signature's derived pubkey
+      // expect(
+      //   Buffer.from(arbStdSignature.pub_key.value, "base64") === sigToPubKey
+      // ).toBe(true);
+      expect(originalAddr === pubkeyToAddress(sigToPubKey, "osmo")).toBe(true);
     });
   });
 });
