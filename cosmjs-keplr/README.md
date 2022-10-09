@@ -10,7 +10,7 @@ The current assumption is that the wallet address' prefix is known.
 Files:
 
 1. `component/FaucetSender.tsx` -- rough FE to generate a Keplr signature (click "Send to Faucet", accept message, check console)
-2. `component/decoder.ts` -- includes the 2 decoding functions described above with some tests.
+2. `./decoder.ts` -- includes the 2 decoding functions described above with some tests.
 
 Assumptions:
 
