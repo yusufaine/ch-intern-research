@@ -118,12 +118,12 @@ export class FaucetSender extends Component<
   render() {
     const { denom, faucetBalance, myAddress, myBalance, toSend } = this.state;
     const { faucetAddress } = this.props;
-    console.log(toSend);
+    // console.log(toSend);
     // The web page structure itself
     return (
       <div>
         <fieldset className={styles.card}>
-          <legend>Faucet</legend>
+          {/* <legend>Faucet</legend>
           <p>Address: {faucetAddress}</p>
           <p>Balance: {faucetBalance}</p>
         </fieldset>
@@ -140,8 +140,10 @@ export class FaucetSender extends Component<
             type="number"
             onChange={this.onToSendChanged}
           />{" "}
-          {denom}
-          <button onClick={this.onSendClicked}>Send to faucet</button>
+          {denom} */}
+          <button onClick={this.onSendClicked}>
+            Click me and check console
+          </button>
         </fieldset>
       </div>
     );
